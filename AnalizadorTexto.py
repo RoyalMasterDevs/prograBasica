@@ -54,10 +54,21 @@ texto_invertido = ' '.join(palabras)
 print(f"Si ordenamos tu texto al reves va a decir: '{texto_invertido}'.")
 
 # 5. Buscar la palabra "python".
-print("BUSCANDO LA PALABRA 'python'")
-buscar_python = 'python' in texto
-dic = {True:"si", False:"no"}
-print(f"La palabra 'python' {dic[buscar_python]} se encuentra en el texto.")
+# print("BUSCANDO LA PALABRA 'python'")
+# buscar_python = 'python' in texto
+# dic = {True:"si", False:"no"}
+# print(f"La palabra 'python' {dic[buscar_python]} se encuentra en el texto.")
 # Tarea
 # Hacer que la busqueda de la palabra sea dinamica.
 # Opcional. Cambiar la variable por un IF
+
+# 5. Buscar una palabra ingresada por el usuario.
+print("\n")
+print("BUSQUEDA DE PALABRAS")
+
+palabra_buscar = input("Ingresa la palabra que quieres buscar en el texto: ").lower()
+
+if palabra_buscar in texto:
+    print(f"La palabra '{palabra_buscar}' SÍ se encuentra en el texto.")
+else:
+    print(f"La palabra '{palabra_buscar}' NO se encuentra en el texto.")
